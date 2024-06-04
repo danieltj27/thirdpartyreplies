@@ -4,7 +4,8 @@ Adds a permission setting to control who can reply to other user's topics.
 
 ## Features
 
-1. Adds a permission setting in the forum 'post' category to restrict replies to user's that started the topic.
+- Adds a permission forum `Post` category to restrict replies to user's that started the topic.
+- Adds a new permission role to quickly set `no third party replies` for any group or user.
 
 ## Install
 
