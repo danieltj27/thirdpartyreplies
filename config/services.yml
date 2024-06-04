@@ -1,0 +1,18 @@
+services:
+    danieltj.thirdpartyreplies.listener:
+        class: danieltj\thirdpartyreplies\event\listener
+        arguments:
+            - '@auth'
+            - '@danieltj.thirdpartyreplies.includes.functions'
+            - '@language'
+            - '@template'
+        tags:
+            - { name: event.listener }
+
+    danieltj.thirdpartyreplies.includes.functions:
+        class: danieltj\thirdpartyreplies\includes\functions
+        arguments:
+            - '@dbal.conn'
+            - '%core.table_prefix%'
+            - '%core.root_path%'
+            - '%core.php_ext%'
