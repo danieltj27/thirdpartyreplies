@@ -19,6 +19,12 @@
         "display-name": "Third Party Replies",
         "soft-require": {
             "phpbb/phpbb": ">=3.3.11"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/third_party_replies",
+            "filename": "version_check",
+            "ssl": true
         }
     }
 }
