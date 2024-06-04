@@ -25,14 +25,18 @@ class install extends \phpbb\db\migration\migration {
 	public function update_data() {
 
 		return [
-			[ 'permission.add', [ 'f_reply_third_party_topics', false, 'f_reply' ] ],
+			[ 'permission.add', [ 'f_reply_third_party_topics', false ] ],
 			[ 'if', [
 				[ 'permission.role_exists', [ 'ROLE_FORUM_FULL' ] ],
-				[ 'permission.permission_set', [ 'ROLE_FORUM_FULL', 'f_reply_third_party_topics' ] ],
+				[ 'permission.permission_set', [ 'ROLE_FORUM_FULL', 'f_reply_third_party_topics' ] ], // Yes
 			] ],
 			[ 'if', [
 				[ 'permission.role_exists', [ 'ROLE_FORUM_STANDARD' ] ],
-				[ 'permission.permission_set', [ 'ROLE_FORUM_STANDARD', 'f_reply_third_party_topics' ] ],
+				[ 'permission.permission_set', [ 'ROLE_FORUM_STANDARD', 'f_reply_third_party_topics' ] ], // Yes
+			] ],
+			[ 'if', [
+				[ 'permission.role_exists', [ 'ROLE_FORUM_LIMITED' ] ],
+				[ 'permission.permission_set', [ 'ROLE_FORUM_LIMITED', 'f_reply_third_party_topics', 'role', false ] ], // Never
 			] ],
 		];
 

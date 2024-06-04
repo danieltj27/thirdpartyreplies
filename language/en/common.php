@@ -19,5 +19,5 @@ if ( empty( $lang ) || ! is_array( $lang ) ) {
 }
 
 $lang = array_merge( $lang, [
-	'POSTING_CANNOT_THIRD_PARTY_REPLY' => 'You do not have permission to reply to topics that you have not started yourself.',
+	'POSTING_CANNOT_THIRD_PARTY_REPLY'	=> 'You do not have permission to reply to topics that you have not started yourself.',
 ] );
