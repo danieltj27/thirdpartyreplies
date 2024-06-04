@@ -3,7 +3,7 @@
     "type": "phpbb-extension",
     "description": "Adds a permission setting to control who can reply to other user's topics.",
     "version": "1.0.0",
-    "license": "MIT",
+    "license": "GPL-2.0-only",
     "authors": [
         {
             "name": "Daniel James",

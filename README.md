@@ -15,4 +15,4 @@ Adds a permission setting to control who can reply to other user's topics.
 
 ## Licence
 
-MIT
+GPL v2

@@ -3,7 +3,7 @@
 /**
  * @package Third Party Replies
  * @copyright (c) 2024 Daniel James
- * @license https://opensource.org/license/mit MIT license
+ * @license https://opensource.org/license/gpl-2-0 GNU Public License
  */
 
 if ( ! defined( 'IN_PHPBB' ) ) {
